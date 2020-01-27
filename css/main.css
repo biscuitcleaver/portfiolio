@@ -1,0 +1,92 @@
+/*https://coolors.co/302a30-698e92-f5dbd1-eeb88e-f23c24*/
+body{
+   background: #302A30;
+   font-family: 'Roboto', sans-serif;
+   color: #fff;
+}
+
+
+h1{
+	font-family: 'Bangers', cursive;
+	letter-spacing: .1em;
+	font-size: 2em;
+	text-text-transform: uppercase;
+}
+
+h2{
+	letter-spacing: .1em;
+	font-size: 1.7em;
+	font-family: 'Bangers', cursive;
+}
+h3{
+	letter-spacing: .1em;
+	font-size: 1.3em;
+	font-family: 'Bangers', cursive;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+	background-color: #698E92;
+	-webkit-box-shadow: 0px 2px 15px -3px rgba(0,0,0,0.68); 
+    box-shadow: 0px 2px 15px -3px rgba(0,0,0,0.68);
+	align-items: center;
+}
+
+nav a{
+	color: #fff;
+	text-decoration: none;	
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav a + a{
+	margin-left: 15px;
+}
+
+.container{
+	padding: 0 20px;
+}
+
+.portfolio{
+	margin-top: 80px;
+}
+
+.portfolio__skills{
+	margin-top: 80px;
+	background-color: #F23C24;
+	padding: 40px 0;
+	-webkit-box-shadow: 0px 2px 15px -3px rgba(0,0,0,0.68); 
+    box-shadow: 0px 2px 15px -3px rgba(0,0,0,0.68);
+}
+
+.portfolio__skills__list{
+	display: flex;
+	justify-content: space-between;
+}
+
+@media all and (min-width: 640px){
+	nav{
+		padding: 0 40px;
+	}
+	
+	.container{
+		padding: 0 40px;
+	}
+}
+
+
+@media all and (min-width: 960px){
+	nav{
+		padding: 0 80px;
+	}
+	
+	.container{
+		padding: 0 80px;
+	}
+}
+
+.buffer{
+	flex: 1;
+}
