@@ -7,36 +7,35 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
- <link href="https://fonts.googleapis.com/css?family=Bangers|Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Roboto&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
 </head>
 
 <body>
   
   <nav>
- 
-     <h1>Greg Lindquist</h1>
-	 <div class="buffer">&nbsp;</div>
-	 
-	 <a data-rel="about" href="#">About</a>
-	 <a data-rel="skills" href="#">Skills</a>
-	 <a data-rel="work" href="#">Work</a>
+    <div class="nav__container">
+		 <h1>Greg Lindquist</h1>
+		 <div class="buffer">&nbsp;</div>
+		 
+		 <a data-target="about" class="active" href="#about">About</a>
+		 <a data-target="skills" href="#skills">Skills</a>
+		 <a data-target="work" href="#work">Work</a>
+	 </div>
   </nav>
   
-    <div class="portfolio">
-		<div class="container" id="about">
+    <div class="portfolio section" id="about">
+		<div class="container">
 			<h2>About</h2>
-			<p>My name is Greg Lindquist; a full stack developer focusing on c#/.net with over a decade of experience in the industry. In that time I've done work for big brands spanning from Gatorade to Tropicana, Lionel Trains to the Indianapolis Motor Speedway and more. </p>
-			<p>I love building new experiences in a collaborative environment. My primary personality trait is to be an explorer, and I'm constantly looking at what's new in .net or any frontend framework. I also love to share my newly found knowledge with others and see how everyone takes the information. Sometimes, the most creative solutions come from with a seed of an idea and germinate with the rest of the team. If asked what my decade + of experience has taught me, it's that while it's possible to build something with a team of one, it's a magical experience to build with a team of telented people.</p>
+			<p>My name is Greg Lindquist; a full stack developer focusing on c#/.net with over a decade of experience in the industry. In that time I've done work for big brands spanning from Gatorade to Tropicana, Lionel Trains to the Indianapolis Motor Speedway and others. </p>
+			<p>I love building new experiences in a collaborative environment. My primary personality trait is to be an explorer, so I'm constantly looking at what's new in .net or any frontend framework. I also love to share my newly found knowledge with others and see how everyone takes the information. Sometimes, the most creative solutions come from with a seed of an idea and germinate with the rest of the team. If asked what my decade + of experience has taught me, it's that while it's possible to build something with a team of one, it's a magical experience to build with a team of telented people.</p>
 			
 		</div>
 		
-		<div class="portfolio__skills" id="skills">
+		<div class="portfolio__skills section" id="skills">
 			<div class="container">
 			<h2>Skills</h2>
 			<p>My experience has focused primarily on web based technologies. I've worked on every aspect of the development of a web project, from project planning and resource management, to the API backend layer, and the frontend presentation layer. </p>
@@ -76,7 +75,7 @@
 							<ul>
 								<li>Git</li>
 								<li>SVN</li>
-								<li>AWS for hosting/dev ops<li>
+								<li>AWS for hosting/dev ops</li>
 								<li>Team City Continous Integration</li>
 								<li>Node.js / Grunt</li>
 								<li>Webpack</li>
@@ -97,7 +96,137 @@
 			</div>
 		</div>
 		
+		<div class="portfolio__work section" id="work">
+			<div class="container">
+			 <h2>Work in Production</h2>
+			 <p>There's been a lot of projects that I'm really proud to be a part of out there in the world. At my last count, there are currently around 20 codebases that are in production that I either help build, currently maintain or both. Due to existing NDA agreements, I cannot share codebases for any site in production. Here's a few examples: </p>
+			 
+			 <div class="portfolio__work__flex">
+			   <a target="_blank" href="https://www.drinkbolt24.com" class="portfolio__work__flex__item"> 
+				   <img src="https://i.picsum.photos/id/1080/400/300.jpg" alt="Drink Bolt 24" />
+				   <h4>Drinkbolt 24</h4>
+				   <p>
+					This is a .net/mvc site built with a custom frontend using jQuery and the Greensock Tweenlite frameworks and packaged via grunt/node.js.</p> 
+			   </a>
+			 
+			   <a  target="_blank"href="https://www.gatorade.com/" class="portfolio__work__flex__item"> 
+				   <img src="https://i.picsum.photos/id/1080/400/300.jpg" alt="Drink Bolt 24" />
+				   <h4>Gatorade</h4>
+				   <p>
+					While not a site I've built from the ground up, I have been steadily making updates for all of 2019 and through current. The site is built in the react framework with a seperate .net core based API for any persistence requirements. My current project is rebuilding Gatorade.com. Due to the nature of the client, the technology will be moved to .net/MVC with a vanilla es6 frontend bundled via webpack.</p> 
+			   </a>
+			 
+			   <a  target="_blank"href="https://www.hello-goodness.com/" class="portfolio__work__flex__item"> 
+				   <img src="https://i.picsum.photos/id/1080/400/300.jpg" alt="Drink Bolt 24" />
+				   <h4>Hello Goodness</h4>
+				   <p>
+					This is a Sitefinity MVC project with a few custom modules and a custom theme. The theme was a jQuery and Greensock based frontend and packaged via grunt/node.js.</p> 
+			   </a>	
+
+			   
+			   <a target="_blank" href="https://business.hapqz.com/home" class="portfolio__work__flex__item"> 
+				   <img src="https://i.picsum.photos/id/1080/400/300.jpg" alt="Drink Bolt 24" />
+				   <h4>HapQz for Business</h4>
+				   <p>HapQz is a custom built technology that is a turn key solution for businesses wanting to create an online presentation. My involvement for this project was building the runtime, which can store data locally for offline usage and uses Signal/R for getting notifications for new updates. The best example of my work is in the 'HapQz in Action'.</p> 
+			   </a>	
+			   
+			   	   
+			   <a target="_blank" href="http://makeroats.com" class="portfolio__work__flex__item"> 
+				   <img src="https://i.picsum.photos/id/1080/400/300.jpg" alt="Drink Bolt 24" />
+				   <h4>Maker Oats</h4>
+				   <p>An example .net/mvc site without the use of any persistence. The frontend was built in jQuery and packaged via grunt/node.js. This site is hosted in an AWS EC2 instance, which I set up.</p> 
+			   </a>	
+			 
+			 
+			   <a target="_blank" href="http://pepsicofoodforgood.com/" class="portfolio__work__flex__item"> 
+				   <img src="https://i.picsum.photos/id/1080/400/300.jpg" alt="Drink Bolt 24" />
+				   <h4>PepsiCo Food for Good</h4>
+				   <p>This site was built with a team effort, although I did most of the server side logic and some of the frontend work. This is a good example of our 'basic' .net sites that could be built within a few weeks.</p> 
+			   </a>				   
+			 </div>
+			
+		
+			<div class="portfolio__github">
+				<h2>Work in Github</h2>
+				<p>I'm currently working on a series of projects that are free of any previously made agreements, which are available for review at my <a href="https://github.com/biscuitcleaver" target="_blank">Github account</a>. If you're interested in how I would approach a project and would to see an example, please feel free to <a href="mailto:lindquist.greg@gmail.com">request one</a>.
+				
+				<div class="portfolio__work__flex">
+				
+					<div target="_blank" class="portfolio__work__flex__item"> 
+					  <h4>Enigma Frontend</h4>
+					  <p>I took the opportunity to learn how the enigma machine works and have applied the inner workings of the mechanism to a simplified backend. The frontend was built out of the React Boilerplate template project, while the meat and potatoes of the project were built as react component. The site was bundled via webpack and deployed to an S3 bucket, making the project truly serverless.</p> 
+					  <a href="https://wandrsapp.com/puzzle/1" target="_blank">Example API Output</a>
+					  <a href="https://github.com/biscuitcleaver/PortfolioAPI" target="_blank">Github Repository</a>
+				   </div>	
+					
+					<div target="_blank" class="portfolio__work__flex__item"> 
+					  <h4>Enigma API</h4>
+					  <p>The backend of the Enigma Front end was developed in a c# core Web API. This was conceived as a project that can accept a simple input, apply business logic to provide an output. The API is deployed as a docker container and hosted via AWS Fargate.</p> 
+					  <a href="http://enigmaexample.com/" target="_blank">Example API Output</a>
+					  <a href="https://github.com/biscuitcleaver/PortfolioReact" target="_blank">Github Repository</a>
+				   </div>			
+				</div>
+				
+			</div>
+			</div>
+		</div>
+		
 	</div>
+	<footer>
+		<div class="container">
+		 Greg Lindquist - 2020
+		</div>
+	</footer>
+	<script>
+		(function() {
+		  'use strict';
+
+		  const section = document.querySelectorAll(".section");
+		  let sections = {};
+		  let i = 0;
+
+		  Array.prototype.forEach.call(section, function(e) {
+			sections[e.id] = e.offsetTop;
+		  });
+
+		  window.onscroll = function() {
+			var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+           
+			for (i in sections) {
+			  if (sections[i] <= scrollPosition + 70) {
+				  if(document.querySelector('.active')){
+					document.querySelector('.active').setAttribute('class', ' ');
+				   }
+				   document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+			  }
+			}
+		  };
+		})();
+
+		(function() {
+		  'use strict';
+		   const navBtns = document.querySelectorAll(".nav__container a");
+		   window.yLocation = 0;
+		   
+		   for(var i = 0; i < navBtns.length; i++){
+				navBtns[i].addEventListener("click", e => {
+					const location = e.currentTarget.dataset.target;
+					
+					const target = document.querySelector("#" + location);
+					const targetY = target.offsetTop - 60;
+					
+					TweenLite.to(window, .5, {yLocation: targetY, onUpdate: function(){
+					
+							window.scrollTo(0, window.yLocation);
+					} });
+					
+					e.preventDefault();
+					return false;
+				});
+		   }
+		  
+		})();
+	</script>
 </body>
 
 </html>
