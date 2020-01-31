@@ -28,10 +28,12 @@
   </nav>
   
     <div class="portfolio section" id="about">
-		<div class="container">
-			<h2>About</h2>
-			<p>My name is Greg Lindquist; a full stack developer focusing on c#/.net with over a decade of experience in the industry. In that time I've done work for big brands spanning from Gatorade to Tropicana, Lionel Trains to the Indianapolis Motor Speedway and others. </p>
-			<p>I love building new experiences in a collaborative environment. My primary personality trait is to be an explorer, so I'm constantly looking at what's new in .net or any frontend framework. I also love to share my newly found knowledge with others and see how everyone takes the information. Sometimes, the most creative solutions come from with a seed of an idea and germinate with the rest of the team. If asked what my decade + of experience has taught me, it's that while it's possible to build something with a team of one, it's a magical experience to build with a team of telented people.</p>
+		<div class="portfolio__header">
+			<div class="container">
+				<h2>About</h2>
+				<p><span class="large">Hi!</span> My name is Greg Lindquist; a full stack developer focusing on c#/.net with over a decade of experience in the industry. In that time I've done work for big brands spanning from Gatorade to Tropicana, Lionel Trains to the Indianapolis Motor Speedway and others. </p>
+				<p>I love building new experiences in a collaborative environment. My primary personality trait is to be an explorer, so I'm constantly looking at what's new in .net or any frontend framework. I also love to share my newly found knowledge with others and see how everyone takes the information. Sometimes, the most creative solutions come from with a seed of an idea and germinate with the rest of the team. If asked what my decade + of experience has taught me, it's that while it's possible to build something with a team of one, it's a magical experience to build with a team of telented people.</p>
+			</div>
 			
 		</div>
 		
@@ -71,7 +73,7 @@
 							</ul>
 					</div>
 					<div>
-						<h3>Dev Ops</h3>
+						<h3>Development Operations</h3>
 							<ul>
 								<li>Git</li>
 								<li>SVN</li>
@@ -99,25 +101,32 @@
 		<div class="portfolio__work section" id="work">
 			<div class="container">
 			 <h2>Work in Production</h2>
-			 <p>There's been a lot of projects that I'm really proud to be a part of out there in the world. At my last count, there are currently around 20 codebases that are in production that I either help build, currently maintain or both. Due to existing NDA agreements, I cannot share codebases for any site in production. Here's a few examples: </p>
+			 <p>There's been a lot of projects that I'm really proud to be a part of out there in the world. At my last count, there are currently around 20 codebases that are in production that I either help build, currently maintain or both. Due to existing NDA agreements, I cannot share codebases for any site in production.</p>
+			 <p>Here's a few examples: </p>
 			 
 			 <div class="portfolio__work__flex">
 			   <a target="_blank" href="https://www.drinkbolt24.com" class="portfolio__work__flex__item"> 
-				   <img src="https://i.picsum.photos/id/1080/400/300.jpg" alt="Drink Bolt 24" />
+			       <div class="imgFrame">
+					 <img src="images/bolt24.png" alt="Drink Bolt 24" />
+				   </div>
 				   <h4>Drinkbolt 24</h4>
 				   <p>
 					This is a .net/mvc site built with a custom frontend using jQuery and the Greensock Tweenlite frameworks and packaged via grunt/node.js.</p> 
 			   </a>
 			 
 			   <a  target="_blank"href="https://www.gatorade.com/" class="portfolio__work__flex__item"> 
-				   <img src="https://i.picsum.photos/id/1080/400/300.jpg" alt="Drink Bolt 24" />
+			       <div class="imgFrame">
+					<img src="images/gatorade.png" alt="Drink Bolt 24" />
+				   </div>
 				   <h4>Gatorade</h4>
 				   <p>
 					While not a site I've built from the ground up, I have been steadily making updates for all of 2019 and through current. The site is built in the react framework with a seperate .net core based API for any persistence requirements. My current project is rebuilding Gatorade.com. Due to the nature of the client, the technology will be moved to .net/MVC with a vanilla es6 frontend bundled via webpack.</p> 
 			   </a>
 			 
 			   <a  target="_blank"href="https://www.hello-goodness.com/" class="portfolio__work__flex__item"> 
-				   <img src="https://i.picsum.photos/id/1080/400/300.jpg" alt="Drink Bolt 24" />
+			       <div class="imgFrame">
+					<img src="images/hellogoodness.png" alt="Drink Bolt 24" />
+				   </div>
 				   <h4>Hello Goodness</h4>
 				   <p>
 					This is a Sitefinity MVC project with a few custom modules and a custom theme. The theme was a jQuery and Greensock based frontend and packaged via grunt/node.js.</p> 
@@ -125,21 +134,27 @@
 
 			   
 			   <a target="_blank" href="https://business.hapqz.com/home" class="portfolio__work__flex__item"> 
-				   <img src="https://i.picsum.photos/id/1080/400/300.jpg" alt="Drink Bolt 24" />
+			       <div class="imgFrame">			   
+					<img src="images/hapqz.png" alt="Drink Bolt 24" />
+				   </div>
 				   <h4>HapQz for Business</h4>
 				   <p>HapQz is a custom built technology that is a turn key solution for businesses wanting to create an online presentation. My involvement for this project was building the runtime, which can store data locally for offline usage and uses Signal/R for getting notifications for new updates. The best example of my work is in the 'HapQz in Action'.</p> 
 			   </a>	
 			   
 			   	   
 			   <a target="_blank" href="http://makeroats.com" class="portfolio__work__flex__item"> 
-				   <img src="https://i.picsum.photos/id/1080/400/300.jpg" alt="Drink Bolt 24" />
+			       <div class="imgFrame">
+					<img src="images/makeroats.png" alt="Drink Bolt 24" />
+				   </div>
 				   <h4>Maker Oats</h4>
 				   <p>An example .net/mvc site without the use of any persistence. The frontend was built in jQuery and packaged via grunt/node.js. This site is hosted in an AWS EC2 instance, which I set up.</p> 
 			   </a>	
 			 
 			 
 			   <a target="_blank" href="http://pepsicofoodforgood.com/" class="portfolio__work__flex__item"> 
-				   <img src="https://i.picsum.photos/id/1080/400/300.jpg" alt="Drink Bolt 24" />
+			       <div class="imgFrame">			   
+					<img src="images/foodforgood.png" alt="Drink Bolt 24" />
+				   </div>
 				   <h4>PepsiCo Food for Good</h4>
 				   <p>This site was built with a team effort, although I did most of the server side logic and some of the frontend work. This is a good example of our 'basic' .net sites that could be built within a few weeks.</p> 
 			   </a>				   
@@ -174,7 +189,7 @@
 	</div>
 	<footer>
 		<div class="container">
-		 Greg Lindquist - 2020
+		  <div>Greg Lindquist</div> <div>2020</div>
 		</div>
 	</footer>
 	<script>
