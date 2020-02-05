@@ -62,6 +62,10 @@ h4{
 	margin-bottom: 20px;
 }
 
+a, a:visited, a:active{
+  color: #fff;  
+}
+
 nav{
 	background-color: #131113;
 	-webkit-box-shadow: 0px 2px 15px -3px rgba(0,0,0,0.68); 
@@ -92,6 +96,16 @@ nav a.active{
 
 nav a + a{
 	margin-left: 15px;
+}
+
+.headerName h1 {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.headerName h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 ul{
@@ -259,6 +273,10 @@ ul{
 
 .portfolio__github a{
 	color: #fff;
+}
+
+.portfolio__work__flex__item{
+	text-decoration: none;
 }
 
 .portfolio__work__flex__item a {

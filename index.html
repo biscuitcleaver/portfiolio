@@ -18,7 +18,10 @@
   
   <nav>
     <div class="nav__container">
-		 <h1>Greg Lindquist</h1>
+		<div class="headerName">
+			 <h1>Greg Lindquist</h1>
+			 <h2>Full Stack Developer</h2>
+		 </div>
 		 <div class="buffer">&nbsp;</div>
 		 
 		 <a data-target="about" class="active" href="#about">About</a>
@@ -31,8 +34,8 @@
 		<div class="portfolio__header">
 			<div class="container">
 				<h2>About</h2>
-				<p><span class="large">Hi!</span> My name is Greg Lindquist; a full stack developer focusing on c#/.net with over a decade of experience in the industry. In that time I've done work for big brands spanning from Gatorade to Tropicana, Lionel Trains to the Indianapolis Motor Speedway and others. </p>
-				<p>I love building new experiences in a collaborative environment. My primary personality trait is to be an explorer, so I'm constantly looking at what's new in .net or any frontend framework. I also love to share my newly found knowledge with others and see how everyone takes the information. Sometimes, the most creative solutions come from with a seed of an idea and germinate with the rest of the team. If asked what my decade + of experience has taught me, it's that while it's possible to build something with a team of one, it's a magical experience to build with a team of telented people.</p>
+				<p><span class="large">Hi!</span> My name is Greg Lindquist; a full stack developer focusing on c#/.net with over a decade of experience in the industry.</p>
+				<p>I love building new experiences in collaborative environments. My primary personality trait is to be an explorer, so I'm constantly looking at what's new in .net or any frontend framework. I also love to share my new found knowledge with others. If asked what my experiences have taught me, it's that while it's possible to build something with a team of one, it's a magical experience to build with a team of telented people.</p>
 			</div>
 			
 		</div>
@@ -40,14 +43,14 @@
 		<div class="portfolio__skills section" id="skills">
 			<div class="container">
 			<h2>Skills</h2>
-			<p>My experience has focused primarily on web based technologies. I've worked on every aspect of the development of a web project, from project planning and resource management, to the API backend layer, and the frontend presentation layer. </p>
+			<p>Over the years, I've had the privelege to work with numerous technologies and frameworks.</p>
 			
 			<div class="portfolio__skills__list">
 					<div>
 					<h3>Project management</h3>
 						<ul>
 							<li>Time Estimates</li>
-							<li>SCRUM</li>
+							<li>Agile Development</li>
 							<li>Technical Documentation</li>
 							<li>Client Management</li>
 							<li>Responding to RFP's</li>
@@ -64,7 +67,7 @@
 								<li>Sitefinity</li>
 								<li>Sitecore</li>
 								<li>Web API 2</li>
-								<li>OAUTH user or application flows</li>
+								<li>OAuth</li>
 								<li>OWIN / Katana Framework</li>
 								<li>Entity Framework</li>
 								<li>Ninject/DI framework</li>
@@ -101,7 +104,7 @@
 		<div class="portfolio__work section" id="work">
 			<div class="container">
 			 <h2>Work in Production</h2>
-			 <p>There's been a lot of projects that I'm really proud to be a part of out there in the world. At my last count, there are currently around 20 codebases that are in production that I either help build, currently maintain or both. Due to existing NDA agreements, I cannot share codebases for any site in production.</p>
+			 <p>Here's a sampling of projects that I've built or currently contribute to. Due to client restrictions, codebases cannot be shared.</p>
 			 <p>Here's a few examples: </p>
 			 
 			 <div class="portfolio__work__flex">
@@ -111,7 +114,7 @@
 				   </div>
 				   <h4>Drinkbolt 24</h4>
 				   <p>
-					This is a .net/mvc site built with a custom frontend using jQuery and the Greensock Tweenlite frameworks and packaged via grunt/node.js.</p> 
+					A .net/mvc site built with a custom frontend using jQuery and the Greensock Tweenlite frameworks and packaged via grunt/node.js.</p> 
 			   </a>
 			 
 			   <a  target="_blank"href="https://www.gatorade.com/" class="portfolio__work__flex__item"> 
@@ -120,7 +123,7 @@
 				   </div>
 				   <h4>Gatorade</h4>
 				   <p>
-					While not a site I've built from the ground up, I have been steadily making updates for all of 2019 and through current. The site is built in the react framework with a seperate .net core based API for any persistence requirements. My current project is rebuilding Gatorade.com. Due to the nature of the client, the technology will be moved to .net/MVC with a vanilla es6 frontend bundled via webpack.</p> 
+					A site that was inherited from another agency and have steadily made updates for all of 2019 and through current. The site is built in the react framework with a seperate .net core based API for any persistence requirements.</p> 
 			   </a>
 			 
 			   <a  target="_blank"href="https://www.hello-goodness.com/" class="portfolio__work__flex__item"> 
@@ -129,7 +132,7 @@
 				   </div>
 				   <h4>Hello Goodness</h4>
 				   <p>
-					This is a Sitefinity MVC project with a few custom modules and a custom theme. The theme was a jQuery and Greensock based frontend and packaged via grunt/node.js.</p> 
+					A Sitefinity MVC project with a few custom modules and a custom theme. The theme was a jQuery and Greensock based frontend and packaged via grunt/node.js.</p> 
 			   </a>	
 
 			   
@@ -138,7 +141,7 @@
 					<img src="images/hapqz.png" alt="Drink Bolt 24" />
 				   </div>
 				   <h4>HapQz for Business</h4>
-				   <p>HapQz is a custom built technology that is a turn key solution for businesses wanting to create an online presentation. My involvement for this project was building the runtime, which can store data locally for offline usage and uses Signal/R for getting notifications for new updates. The best example of my work is in the 'HapQz in Action'.</p> 
+				   <p>HapQz is a turn key solution for businesses wanting to create an online presentation. My involvement for this project was building the runtime, which can store data locally for offline usage and uses SignalR for notifications on new updates. The best example of my work is in the 'HapQz in Action' section of the homepage.</p> 
 			   </a>	
 			   
 			   	   
@@ -147,7 +150,7 @@
 					<img src="images/makeroats.png" alt="Drink Bolt 24" />
 				   </div>
 				   <h4>Maker Oats</h4>
-				   <p>An example .net/mvc site without the use of any persistence. The frontend was built in jQuery and packaged via grunt/node.js. This site is hosted in an AWS EC2 instance, which I set up.</p> 
+				   <p>An example .net/mvc site without the use of any persistence. The frontend was built in jQuery and packaged via grunt/node.js. I also have designed the hosting environment, which consists of an EC2 instance within a VPC with a public subnet.</p> 
 			   </a>	
 			 
 			 
@@ -156,14 +159,14 @@
 					<img src="images/foodforgood.png" alt="Drink Bolt 24" />
 				   </div>
 				   <h4>PepsiCo Food for Good</h4>
-				   <p>This site was built with a team effort, although I did most of the server side logic and some of the frontend work. This is a good example of our 'basic' .net sites that could be built within a few weeks.</p> 
+				   <p>Another .net/MVC site. This one uses a MSSQL database, entity framework for persistence. The frontend uses jQuery, Tweenlite and Grunt for code bundling.</p> 
 			   </a>				   
 			 </div>
 			
 		
 			<div class="portfolio__github">
 				<h2>Work in Github</h2>
-				<p>I'm currently working on a series of projects that are free of any previously made agreements, which are available for review at my <a href="https://github.com/biscuitcleaver" target="_blank">Github account</a>. If you're interested in how I would approach a project and would to see an example, please feel free to <a href="mailto:lindquist.greg@gmail.com">request one</a>.
+				<p>I'm currently working on a series of projects with freely available source code. These examples are available for review at my <a href="https://github.com/biscuitcleaver" target="_blank">Github account</a>. If you're interested in how I would approach a project and would to see an example, please feel free to <a href="mailto:lindquist.greg@gmail.com">request one</a>.
 				
 				<div class="portfolio__work__flex">
 				
@@ -176,7 +179,7 @@
 					
 					<div target="_blank" class="portfolio__work__flex__item"> 
 					  <h4>Enigma API</h4>
-					  <p>The backend of the Enigma Front end was developed in a c# core Web API. This was conceived as a project that can accept a simple input, apply business logic to provide an output. The API is deployed as a docker container and hosted via AWS Fargate.</p> 
+					  <p>The backend of the Enigma Front end was developed in a c# core Web API. This was conceived as a project that can accept a simple input, apply business logic to provide an output. The scoreboard is saved to an AWS DynamoDB table. The API is deployed as a docker container and hosted via AWS Elastic Cloud Computer.</p> 
 					  <a href="https://wandrsapp.com/puzzle/1" target="_blank">Example API Output</a>
 					  <a href="https://github.com/biscuitcleaver/PortfolioAPI" target="_blank">Github Repository</a>
 				   </div>			
